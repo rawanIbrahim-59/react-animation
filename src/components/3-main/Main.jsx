@@ -4,7 +4,14 @@ import "./main.css";
 const myProject = [
   { title: "Landing1", cat: ["react", "node"], imgPath: "./a" },
   { title: "Landing2", cat: ["css", "js"], imgPath: "./b" },
-  { title: "Landing33", cat: ["react", "node"], imgPath: "./c" },
+  { title: "Landing3", cat: ["react", "node"], imgPath: "./c" },
+  { title: "Landing4", cat: ["react", "node"], imgPath: "./d" },
+  { title: "Landing5", cat: ["css", "js"], imgPath: "./e" },
+  { title: "Landing6", cat: ["react", "node"], imgPath: "./f" },
+  { title: "Landing7", cat: ["react", "node"], imgPath: "./g" },
+  { title: "Landing8", cat: ["css", "js"], imgPath: "./h" },
+  { title: "Landing9", cat: ["react", "node"], imgPath: "./i" },
+  { title: "Landing10", cat: ["react", "node"], imgPath: "./j" }
 ];
 export default function Main() {
   const [currentActive, setCurrentActive] = useState("all");
