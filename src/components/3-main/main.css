@@ -1,0 +1,133 @@
+.parent-section{
+    gap: 1.4rem;
+    justify-content: start;
+    align-items: start;
+}
+
+/* ======left Section====== */
+
+.left-section ul {
+
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: start;
+    justify-content: center;
+}
+.left-section ul li{
+    background-color: var(--bgHeader);
+    padding: 0.8rem 0.7rem;
+    width: 165px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--subtitle);
+    transition: 0.3s;
+}
+.left-section ul li.active{
+    font-weight: bold;
+    color: var(--title);
+    letter-spacing: 0.1rem;
+    border: 1px solid var(--blue);
+    box-shadow: 0.5px 0.5px 0.5px #fff;
+    transition: 0.3s;
+
+}
+.left-section ul li:hover{
+    color: var(--blue);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ======Right Section====== */
+
+.right-section{
+
+    flex-wrap: wrap;
+    column-gap: 0.8rem;
+    row-gap: 1.9rem;
+    justify-content: center;
+}
+.right-section .card img,.right-section .card .text
+{
+    width: 260px;
+}
+.right-section .card img{
+    border-radius: 5px;
+}
+.right-section .card{
+    border: 1px solid rgb(139, 139, 199);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.right-section .card:hover{
+    border: 1px solid var(--blue);
+    rotate: 1deg;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.right-section .card .text{
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: start;
+    padding: 0.5rem 0.5rem;
+    background-color: rgb(30, 30, 41);
+    border-radius: 5px;
+}
+.right-section .card .text .title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--title);
+}
+.right-section .card .text .subtitle{
+    font-size: 0.8rem;
+    color: var(--subtitle);
+}
+.right-section .card .text .icons{
+    gap:6rem;
+    justify-content: space-between;
+    color: var(--subtitle);
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.right-section .card .text .icons .icon{
+    gap: 1.3rem;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.right-section .card .text .icons .icon span:hover{
+    color: var(--icon-hover);
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
+.right-section .card .text .icons .more{
+    gap: 0.5rem;
+    color: var(--blue);
+}
+.parent-section .right-section .card{
+    z-index: unset;
+}
+@media (max-width:992px) {
+    .parent-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 2.3rem ;
+    }
+    .left-section ul {
+        flex-direction: row;
+        gap: 1rem !important;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+}
+@media (max-width:400px) {
+    .left-section ul li {
+        width: 140px;
+    }
+    
+}

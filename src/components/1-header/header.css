@@ -1,0 +1,103 @@
+header.flex {
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-top: 1.2rem;
+}
+header ul.flex {
+  gap: 20px;
+}
+header ul li a {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.9rem;
+}
+header button {
+  font-size: 1.2rem;
+}
+header nav {
+  background-color: var(--bgHeader);
+  border-radius: 55px;
+  padding: 0.77rem 1.6rem;
+  box-shadow: 1px 1px 40px #2323242a;
+}
+header .menu-header{
+    display: none;
+} 
+/* Icons Buttons */
+header .icon-menu, header .mode{
+    background-color: var(--bgHeader);
+    width: 2.5rem ;
+    height: 2.5rem;
+
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   text-align: center;
+   color: var(--subtitle);
+   border: 1px solid rgba(244,165,96,0.249);
+   transition: 0.4s;
+}
+header .icon-menu:hover, header .mode:hover{
+    color:var(--title);
+    border: 1px solid rgb(244 ,165 ,96 );
+}
+header .icon-close{
+    font-size: 1.4rem;
+    color: var(--subtitle);
+    transition: 0.4s;
+}
+header .icon-close:hover{
+    color: crimson;
+    font-size: 1.7rem;
+    rotate: 180deg;
+
+}
+/* Pop Up */
+header .fixed{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(49, 49, 54, 0.664);
+    align-items: center;
+    justify-content: center;
+}
+header .fixed ul{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    background-color: var(--secondary);
+    padding: 1rem 2rem ;
+    border-radius: 10px;
+    animation: mymove 0.7s 1;
+  
+}
+header .fixed ul li{
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+header .fixed ul li a{
+    font-size: 1rem;
+}
+header .fixed ul li:last-child{
+    border-bottom: none;
+}
+header .fixed ul li:first-child{
+    text-align: right;
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0.2rem;
+
+}
+@keyframes mymove {
+    0% {scale: 0;}
+    60% {scale: 1.1;}
+    100% {scale: 1;}
+}

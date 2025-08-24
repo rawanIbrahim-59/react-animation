@@ -1,0 +1,140 @@
+.parent-section-contact{
+  justify-content: space-between;
+}
+.parent-section-contact .main-title h1 {
+  color: var(--title);
+}
+.parent-section-contact .main-title {
+  align-items: center;
+  gap: 1rem;
+}
+.parent-section-contact .main-title span {
+  font-size: 1.9rem;
+  color: var(--subtitle);
+}
+.parent-section-contact .left-section {
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: start;
+  /* flex-grow: 1; */
+}
+.parent-section-contact .left-section p {
+  color: var(--subtitle);
+}
+.parent-section-contact .left-section form {
+  color: var(--subtitle);
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+.parent-section-contact .left-section form .email {
+  gap: 1.5rem;
+}
+.parent-section-contact .left-section form .msg {
+  gap: 1.5rem;
+}
+.parent-section-contact .left-section form input {
+  border: 1px solid #ffffff57;
+  background-color: var(--bgHeader);
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: var(--title);
+}
+.parent-section-contact .left-section form textarea {
+  border: 1px solid #ffffff57;
+  background-color: var(--bgHeader);
+  width: 250px;
+
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: var(--title);
+}
+.parent-section-contact .left-section form #email:hover,
+.parent-section-contact .left-section form #message:hover {
+  border: 1px solid var(--blue);
+}
+
+.parent-section-contact .left-section form #email:focus,
+.parent-section-contact .left-section form #message:focus {
+  border: 1px solid var(--blue);
+}
+.parent-section-contact .left-section form #message {
+  min-height: 9rem;
+  resize: vertical;
+}
+.parent-section-contact .left-section form .submit {
+  background-color: var(--bgHeader);
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+}
+.success-message{
+  font-size: 1.3rem;
+  color: var(--title);
+  font-weight: 300;
+
+}
+.lottie-an{
+  height: 55px;
+}
+.lottie-an-email{
+  height: 350px;
+
+}
+.parent-section-contact .right-section{
+  margin-right: 6rem;
+}
+
+@media (max-width: 700px) {
+  .parent-section-contact .right-section {
+    display: none;
+  }
+  .parent-section-contact .left-section form .email,
+  .parent-section-contact .left-section form .msg {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+  }
+  .parent-section-contact .left-section form {
+    justify-content: center;
+    width: 100%;
+  }
+  .parent-section-contact .left-section form #email,
+  .parent-section-contact .left-section form #message {
+    width: 85%;
+  }
+}
+@media (min-width:992px)and (max-width:1200px) {
+  .parent-section-contact .right-section{
+    margin-right: 1rem !important;
+  }
+  .lottie-an-email{
+    height: 290px;
+  
+  }
+}
+@media (max-width:991px) {
+  .parent-section-contact .right-section{
+    display: none;
+  }
+  .parent-section-contact .left-section form .email,
+  .parent-section-contact .left-section form .msg {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    width: 100%;
+  }
+  .parent-section-contact .left-section form {
+    justify-content: center;
+    width: 100%;
+  }
+  .parent-section-contact .left-section form #email,
+  .parent-section-contact .left-section form #message {
+    width: 90% !important;
+  }
+}

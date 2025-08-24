@@ -1,0 +1,71 @@
+.hero-section{
+    margin-top: 3rem;
+}
+.hero-section .left-section {
+    flex-direction: column;
+    align-items: start;
+    gap: 0.9rem;
+    flex-grow: 1;
+}
+.left-section .avater{
+width: 150px;
+height: 170px;
+border-radius: 50%;
+border:1px solid rgb(157, 157, 219);
+padding: 0.5rem;
+box-shadow: 1px 1px 2px #fff inset;
+}
+.hero-section .img-section{
+    display: flex;
+    gap: 0.6rem;
+    align-items: end;
+}
+.hero-section .img-section .icon-verified{
+    margin-bottom: 1.8rem;
+    color: var(--blue);
+}
+.hero-section .left-section h1{
+    color:var(--title);
+    font-size: 2rem;
+}
+.hero-section .left-section p{
+    color:var(--subtitle);
+    line-height: 22px;
+    font-size: 1rem;
+}
+.hero-section .left-section .icons{
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--subtitle);
+    height: 50px;
+    transition: 0.3s;
+    
+
+}
+.hero-section .left-section .icons .icon{
+    transition: 0.3s;
+}
+.hero-section .left-section .icons .icon:hover{
+    color: var(--icon-hover);
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.lottie-an-developer{
+    width: 400px;
+    height: 350px;
+    translate: 25px 65px;
+}
+
+
+
+
+
+@media (max-width:1000px) {
+    .hero-section .right-section{
+        display: none;
+    }
+
+    
+}
